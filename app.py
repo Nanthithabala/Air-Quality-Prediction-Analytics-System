@@ -67,7 +67,7 @@ except Exception as e:
 
 # ---------------- GEMINI AI ---------------- #
 
-genai.configure(api_key="YOUR_API KEY")
+genai.configure(api_key="AQ.Ab8RN6Igmuc1s3iB8_fDUMj9ydwjYS2F4ggTOFn1Wp0V_jEE9Q")
 
 gemini_model = genai.GenerativeModel("gemini-2.5-flash")    
 
