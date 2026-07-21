@@ -67,9 +67,12 @@ except Exception as e:
 
 # ---------------- GEMINI AI ---------------- #
 
-genai.configure(api_key="AQ.Ab8RN6Igmuc1s3iB8_fDUMj9ydwjYS2F4ggTOFn1Wp0V_jEE9Q")
+import streamlit as st
+import google.generativeai as genai
 
-gemini_model = genai.GenerativeModel("gemini-2.5-flash")    
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+
+gemini_model = genai.GenerativeModel("gemini-1.5-flash")  
 
 # ---------------- SIDEBAR ---------------- #
 
