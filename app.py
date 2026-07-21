@@ -70,10 +70,9 @@ except Exception as e:
 import streamlit as st
 import google.generativeai as genai
 
-genai.configure(api_key=st.secrets["AQ.Ab8RN6Igmuc1s3iB8_fDUMj9ydwjYS2F4ggTOFn1Wp0V_jEE9Q"])
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
-gemini_model = genai.GenerativeModel("gemini-1.5-flash")  
-
+gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 # ---------------- SIDEBAR ---------------- #
 
 st.sidebar.title("🌍 Air Quality")
