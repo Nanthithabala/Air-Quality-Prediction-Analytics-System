@@ -7,3 +7,4 @@ prophet
 google-generativeai
 plotly
 matplotlib
+openpyxl
