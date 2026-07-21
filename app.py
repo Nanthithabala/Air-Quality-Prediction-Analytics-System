@@ -60,8 +60,9 @@ df = load_data()
 regression_model = joblib.load("aqi_regression_model.pkl")
 
 try:
-    prophet_model = joblib.load("Prophet_aqi_model.pkl")
-except:
+    prophet_model = joblib.load("prophet_aqi_model.pkl")
+except Exception as e:
+    st.error(f"Prophet loading error: {e}")
     prophet_model = None
 
 # ---------------- GEMINI AI ---------------- #
